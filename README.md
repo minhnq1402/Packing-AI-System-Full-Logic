@@ -1,4 +1,4 @@
-# 📦 Smart Packing System (Hệ thống Kiểm Tra Đóng Gói Thông Minh)
+#  Smart Packing System (Hệ thống Kiểm Tra Đóng Gói Thông Minh)
 
 Hệ thống giám sát và kiểm tra quy trình đóng gói công nghiệp thời gian thực (Real-time QA/QC) sử dụng 4 Camera IP, trí tuệ nhân tạo (YOLOv8) và các thuật toán thị giác máy tính nâng cao.
 
@@ -15,7 +15,7 @@ Dự án này được thiết kế để chạy trên Server (Linux/Windows) v�
 3.  **Đúng quy cách:** Kiểm tra độ sâu (Depth Check) dựa trên diện tích để phát hiện vật chưa ấn chặt/bị nổi.
 4.  **Đúng quy trình:** Cảnh báo nếu vật của công đoạn sau xuất hiện ở công đoạn trước.
 
-## ✨ Tính năng nổi bật
+## Tính năng nổi bật
 
 * **Multi-Stream Processing:** Xử lý song song 4 luồng Camera RTSP với cơ chế `Thread-Safe` và `Locking` để ngăn chặn xung đột bộ nhớ & Segmentation Fault.
 * **Dual AI Models:** Kết hợp 2 model YOLOv8:
@@ -31,7 +31,7 @@ Dự án này được thiết kế để chạy trên Server (Linux/Windows) v�
     * Đếm ngược **10s** chốt đơn khi quy trình hoàn tất (Trigger bởi Cam 4).
 * **Auto Recording:** Tự động quay màn hình và lưu video `.mp4` vào thư mục `recordings/` với tên file theo thời gian thực.
 
-## 🛠️ Cài đặt & Yêu cầu
+## Cài đặt & Yêu cầu
 
 ### Phần cứng
 * PC/Server có GPU NVIDIA (VRAM > 6GB).
@@ -66,7 +66,7 @@ PACKING_RULES = {
     "cam_1": {1: "Den_nho", 2: "Den_nho"},
     ...
 }
-🚀 Chạy chương trình
+Chạy chương trình
 Bash
 python3 main.py
 📂 Cấu trúc thư mục
@@ -82,8 +82,8 @@ packing_system/
 │
 ├── recordings/         # Video lưu tự động (Tự tạo khi chạy)
 └── README.md           # Tài liệu này
-⚠️ Lưu ý vận hành
+Lưu ý vận hành
 Hệ thống sử dụng cv2.setNumThreads(0) để tránh xung đột giữa OpenCV và PyTorch trên Linux. Không xóa dòng này.
 Để dừng chương trình an toàn và lưu video, nhấn phím 'q' trên cửa sổ hiển thị.
 
-## 🎥 Demo Hoạt Động
+##Demo Hoạt Động
