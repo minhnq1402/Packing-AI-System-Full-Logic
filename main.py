@@ -13,14 +13,14 @@ from processor import FrameProcessor
 
 # --- CẤU HÌNH ---
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;tcp"
-MODEL_ITEM_PATH = r"/media/edabk/IOTK68/Working_space_phuc/quangminh/CKI/best_ck.pt"
-MODEL_SLOT_PATH = r"/media/edabk/IOTK68/Working_space_phuc/quangminh/CKI/best.pt"
+MODEL_ITEM_PATH = r"best_ck.pt"
+MODEL_SLOT_PATH = r"best.pt"
 
 RTSP_URLS = [
-    "rtsp://admin:CPSFLT@192.168.1.160:554/ch1/main",
-    "rtsp://admin:DVCLRQ@192.168.1.116:554/ch1/main",
-    "rtsp://admin:BWKUYM@192.168.1.144:554/ch1/main",
-    "rtsp://admin:KXILGD@192.168.1.152:554/ch1/main",
+    "rtsp://admin",
+    "rtsp://admin:",
+    "rtsp://admin:",
+    "rtsp://admin:",
 ]
 
 PROC_W, PROC_H = 640, 480 
