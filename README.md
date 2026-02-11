@@ -84,13 +84,6 @@ packing_system/
 └── README.md           # Tài liệu này
 ⚠️ Lưu ý vận hành
 Hệ thống sử dụng cv2.setNumThreads(0) để tránh xung đột giữa OpenCV và PyTorch trên Linux. Không xóa dòng này.
-
 Để dừng chương trình an toàn và lưu video, nhấn phím 'q' trên cửa sổ hiển thị.
 
 ## 🎥 Demo Hoạt Động
-
-Dưới đây là video quay lại quá trình hệ thống hoạt động thực tế với 4 Camera:
-
-https://github.com/user/project/assets/12345678/video-id-goc.mp4
-
-_Video demo quy trình đóng gói, kiểm tra lỗi và tự động reset._
